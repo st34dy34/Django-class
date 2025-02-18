@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block content %}
+<h2>Vyberte kategorii</h2>
+
+<form method="get">
+  <label for="category">Vyber kategorii:</label>
+  <select name="category" id="category">
+    <option value="filmy">Filmy</option>
+    <option value="knihy">Knihy</option>
+    <option value="hry">Hry</option>
+  </select>
+  <button type="submit">Odeslat</button>
+</form>
+
+{% if category %}
+<h3>Vybraná kategorie: {{ category }}</h3>
+{% endif %} {% endblock %}

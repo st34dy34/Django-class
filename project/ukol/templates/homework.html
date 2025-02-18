@@ -1,0 +1,19 @@
+{% extends "base.html" %} {% block content %}
+<ul>
+  <li>
+    <a href="show-message/?message=Ahoj!"><h2>Odoslanie GET parametra cez URL</h2></a>
+  </li>
+  <li>
+    <a href="choose-category/"><h2>Formulár na výber kategórie</h2></a>
+  </li>
+  <li>
+    <a href="feedback/"><h2>Odoslanie spätnej väzby</h2></a>
+  </li>
+  <li>
+    <a href="static-page/"><h2>Statická stránka pomocou TemplateView</h2></a>
+  </li>
+  <li>
+    <a href="contact/"><h2>Spracovanie formulára cez POST v Class-based View</h2></a>
+  </li>
+</ul>
+{% endblock %}
