@@ -1,1 +1,1 @@
-# Django-class
+# Úkol uvnitř /project/ukol
