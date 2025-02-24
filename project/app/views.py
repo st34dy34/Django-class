@@ -12,5 +12,8 @@ def about(request):
 def fake(request,id):
     return render(request, "fake.html", {"id":id})
 
-def ukol(request,id):
+def ukol(request):
     return redirect("ukol")
+
+def ukol2(request):
+    return redirect("jacket_list")  

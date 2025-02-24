@@ -6,4 +6,5 @@ urlpatterns = [
     path('about/', views.about, name="about"),
     path('fake/<int:id>', views.fake, name="fake-detail"),
     path('ukol', views.ukol, name="ukol"),
+    path('ukol2', views.ukol2, name="ukol2"),
 ]

@@ -1,0 +1,6 @@
+{% extends "base.html" %} {% block content %}
+<a href="{% url 'jacket_update' jacket.pk %}">Edit</a>
+<a href="{% url 'jacket_delete' jacket.pk %}">Delete</a>
+<h3>Name:{{ jacket.brand }}</h3>
+<h4>Color: {{ jacket.color }}</h4>
+{% endblock %}

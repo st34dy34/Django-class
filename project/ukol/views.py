@@ -42,3 +42,4 @@ class ContactView(View):
         print(f"Zpráva od {name} ({email}): {message}") 
         
         return render(request, "contact_form.html", {"success": True})
+    

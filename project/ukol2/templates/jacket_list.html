@@ -1,0 +1,6 @@
+{% extends "base.html" %} {% block content %}
+<a href="{% url 'jacket_create' %}">Add new</a>
+{% for jacket in jackets %}
+<h3>Jacket:<a href="{% url 'jacket_detail' jacket.pk %}">{{ jacket.brand }}</a></h3>
+<hr />
+{% endfor %} {% endblock %}
