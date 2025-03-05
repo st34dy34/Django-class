@@ -1,0 +1,19 @@
+{% extends "base.html" %} {% block content %}
+<h1>Social Site</h1>
+{% if user.is_authenticated %}
+
+<p>Hellooooooooooooo {{ user.username }}</p>
+<form action="{% url 'pizza_logout' %}" method="post">
+  {% csrf_token %}
+  <button type="submit">Logout</button>
+</form>
+<a href="{% url 'profile' %}">Profile</a>
+<a href="{% url 'make_pizza' %}">Make pizza!</a>
+
+{% else %}
+
+<p>Nejsi přihlášený</p>
+<a href="{% url 'pizza_registration' %}">Registration</a>
+<a href="{% url 'pizza_login' %}">Login</a>
+
+{% endif %} {% endblock %}

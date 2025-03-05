@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% block content %}
+<h1>Authentication</h1>
+
+{% if form %}
+<!-- Registration or login form -->
+<form method="post">
+  {% csrf_token %} {{ form.as_p }}
+  <button type="submit">Submit</button>
+</form>
+{% else %}
+<!-- Logout confirmation -->
+<form action="{% url 'pizza_logout' %}" method="post">
+  {% csrf_token %}
+  <p>Are you sure you want to log out?</p>
+  <button type="submit">Logout</button>
+</form>
+{% endif %} {% endblock %}

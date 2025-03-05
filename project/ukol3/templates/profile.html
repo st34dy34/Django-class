@@ -1,0 +1,12 @@
+{% extends "base.html" %} {% block content %}
+<p>{{ user.username }}</p>
+<h3>Your Pizzas:</h3>
+{% if pizzas %}
+<ul>
+  {% for pizza in pizzas %}
+  <li>{{ pizza }}</li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>You haven't made any pizzas yet.</p>
+{% endif %} {% endblock %}

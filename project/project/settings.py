@@ -42,6 +42,9 @@ INSTALLED_APPS = [
     'lekce3',
     'ukol',
     'ukol2',
+    'lekce4',
+    "ukol3",
+    "lekce5",
 ]
 
 MIDDLEWARE = [
@@ -126,3 +129,9 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_URL = "/ukol3/login/"
+
+
+LOGOUT_REDIRECT_URL = "home"
+LOGIN_REDIRECT_URL = "home"

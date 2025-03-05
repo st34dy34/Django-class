@@ -24,4 +24,7 @@ urlpatterns = [
     path('ukol/', include('ukol.urls')),
     path('lekce3/', include('lekce3.urls')),
     path('ukol2/', include('ukol2.urls')),
+    path('lekce4/', include('lekce4.urls')),
+    path('ukol3/', include('ukol3.urls')),
+    path('lekce5/', include('lekce5.urls')),
 ]

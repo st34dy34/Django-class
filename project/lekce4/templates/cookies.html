@@ -1,0 +1,7 @@
+{% extends "base.html" %} {% block content %}
+<h1>Cookies</h1>
+<a href="{% url 'create_cookie' %}">Add new</a>
+<a href="{% url 'show_cookie' %}">Show</a>
+<a href="{% url 'delete_cookie' %}">Delete</a>
+
+{% endblock %}
